@@ -3,7 +3,7 @@ With 1 master, 2 workers.
 Please create an SSH key get the pub key and put it on the cloud init files.
 Please also change the ip and interface to your desired.should work.
 
-Create just a empty QCOW2 deployment on your Rocky 9.5 using composer-cli. for the qcow2 .
+Create just a standard QCOW2 deployment on your Rocky 9.5 using composer-cli. for the qcow2 .
 
 Example blueprint file:
 
