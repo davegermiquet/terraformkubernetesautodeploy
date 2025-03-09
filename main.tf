@@ -63,15 +63,3 @@ resource "libvirt_volume" "master" {
   pool           = "images"
 }
 
-# volumes to attach to the "workers" domains as main disk
-resource "libvirt_volume" "worker" {
-  name           = "worker_automation.qcow2"
-  base_volume_id = libvirt_volume.automationqcowexample.id
-  pool           = "images"
-}
-
-#resource "libvirt_volume" "master_kubernetes_automation" {
-#         name = "master_automation"
-#         pool = "disk1"
-#         size = "54687091200"
-#}
