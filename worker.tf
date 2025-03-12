@@ -37,6 +37,7 @@ resource "libvirt_domain" "worker1_domain" {
 # volumes to attach to the "workers" domains as main disk
 resource "libvirt_volume" "worker1" {
   name           = "worker_automation.qcow2"
+  size           = 21474836480
   base_volume_id = libvirt_volume.automationqcowexample.id
   pool           = "images"
 }

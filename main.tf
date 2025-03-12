@@ -26,7 +26,7 @@ resource "libvirt_domain" "master_domain" {
   boot_device { dev = ["hd"] }
   cloudinit = libvirt_cloudinit_disk.commoninit.id
   vcpu      = 2
-  memory    = 8098
+  memory    = 4098
   cpu {
     mode = "host-passthrough"
   }
